@@ -22,14 +22,23 @@ def findflacs (basedir):
     allflacs = glob (basedir + '*.flac')
     return allflacs
 
+def findoggs (basedir):
+    alloggs = glob (basedir + '*.ogg')
+    return alloggs
+
 base_dir = "E://Media/Music/" 
 mymp3s = findmp3s (base_dir)
 myflacs = findflacs (base_dir)
+myoggs = findoggs (base_dir)
 print(f"found {len(mymp3s)}")
 for mp3 in mymp3s:
     print(f'found the mp3 {mp3}')
+
 for flac in myflacs:
     print(f'found the flsc {flac}')
+
+for ogg in myoggs:
+    print(f'found the ogg {ogg}')
 
 
 

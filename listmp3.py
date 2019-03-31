@@ -45,5 +45,7 @@ for flac in myflacs:
 for ogg in myoggs:
     print(f'found the ogg {ogg}')
 
+#for all in mymusic:
+   #print(f'{*.*}')
 
 print('the program has ended')

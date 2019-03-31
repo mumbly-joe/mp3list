@@ -20,7 +20,7 @@ def findmp3s (basedir):
 
 def findflacs (basedir):
     allflacs = glob (basedir + '*.flac')
-    return findflacs
+    return allflacs
 
 base_dir = "E://Media/Music/" 
 mymp3s = findmp3s (base_dir)
@@ -28,7 +28,7 @@ myflacs = findflacs (base_dir)
 print(f"found {len(mymp3s)}")
 for mp3 in mymp3s:
     print(f'found the mp3 {mp3}')
-for flac in findflacs:
+for flac in myflacs:
     print(f'found the flsc {flac}')
 
 

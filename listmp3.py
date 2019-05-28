@@ -27,7 +27,7 @@ def findoggs (basedir):
     return alloggs
 
 def findallext (basedir):
-    allext = glob (basedir + '*.mp3' + '*.ogg' + '*.flac')
+    allext = glob (basedir + '*.mp3 *.ogg *.flac')
     return allext
 
 base_dir = "E://Media/Music/" 
@@ -45,7 +45,7 @@ for flac in myflacs:
 for ogg in myoggs:
     print(f'found the ogg {ogg}')
 
-#for all in mymusic:
-   #print(f'{*.*}')
+for files in mymusic:
+   print(f'{mp3}')
 
 print('the program has ended')

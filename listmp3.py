@@ -30,11 +30,21 @@ def findallext (basedir):
     allext = glob (basedir + '*.mp3 *.ogg *.flac')
     return allext
 
+def findalldir (basedir):
+    alldir = []
+    for music in glob (basedir + '*'):
+        if os.path.isdir (music):
+            alldir.append (music)
+    return alldir
+     
 base_dir = "E://Media/Music/" 
 mymp3s = findmp3s (base_dir)
 myflacs = findflacs (base_dir)
 myoggs = findoggs (base_dir)
 mymusic = findallext (base_dir)
+
+mydirs = findalldir (base_dir)
+
 print(f"found {len(mymp3s)}")
 for mp3 in mymp3s:
     print(f'found the mp3 {mp3}')
@@ -46,6 +56,15 @@ for ogg in myoggs:
     print(f'found the ogg {ogg}')
 
 for files in mymusic:
-   print(f'{mp3}')
+    print(f'{mp3}')
+
+count=0
+
+for dir in mydirs:
+    print(dir)
+
+    subdirs=findmp3s(dir)
+    print(count,subdirs)
+    count=count+1
 
 print('the program has ended')

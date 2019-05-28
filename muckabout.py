@@ -42,3 +42,8 @@ for my_value in my_list:
     if my_value == 10:
         print("the value is 10! ")
 
+def hello(arg1, arg2):
+    print(f'hello-cunts {arg1}')
+    print(f'from {arg2}')
+
+

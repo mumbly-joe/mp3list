@@ -1,3 +1,4 @@
+powershell
 python
-D:\VSC\mp3list\mp3list\dirsearch3.py > E:\Media\musiclist.txt
+D:\VSC\mp3list\mp3list\musicdir.py > E:\Media\musiclist.txt
 pause

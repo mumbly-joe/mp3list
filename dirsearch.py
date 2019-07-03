@@ -3,11 +3,9 @@ import os
 from glob import glob
 from sys import platform
 
-
-
 base_dir = "E://Media/Music/"
-dirnames = ()
-filenames = ()
+dirname = ()
+filename = ()
 
 for base_dir, dirnames, filenames in os.walk('.'):
     # print path to all subdirectories first.
